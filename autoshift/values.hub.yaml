@@ -8,7 +8,7 @@ autoshift:
   # When false, policies use their defined remediationAction
   dryRun: false
 
-autoshiftGitRepo: https://github.com/auto-shift/autoshiftv2.git
+autoshiftGitRepo: https://github.com/juliaaano/autoshiftv2.git
 autoshiftGitBranchTag: main
 
 selfManagedHubSet: hub
@@ -55,7 +55,7 @@ hubClusterSets:
       # OpenShift version for cluster deployment and image mirroring
       openshift-version: '4.18.28'
       ### OpenShift Gitops
-      gitops: 'true' # is expected to be installed on all hub clusters
+      gitops: 'false' # is expected to be installed on all hub clusters
       gitops-subscription-name: openshift-gitops-operator
       gitops-channel: gitops-1.19
       # gitops-version: 'openshift-gitops-operator.v1.18.0'
@@ -127,7 +127,7 @@ hubClusterSets:
       worker-nodes-numcores-per-socket: ''
       worker-nodes-zone-1: ''
       ### Storage Nodes
-      storage-nodes: '3'
+      storage-nodes: ''
       # storage-nodes-zone-1: 'us-east-2a'
       # storage-nodes-zone-2: 'us-east-2b'
       # storage-nodes-zone-3: 'us-east-2c'
@@ -158,7 +158,7 @@ hubClusterSets:
       local-storage-source: redhat-operators
       local-storage-source-namespace: openshift-marketplace
       ### OpenShift Data Foundation
-      odf: 'true'
+      odf: 'false'
       odf-subscription-name: odf-operator
       # odf-version: 'odf-operator.v4.18.11-rhodf'
       odf-multi-cloud-gateway: standard
@@ -236,7 +236,7 @@ hubClusterSets:
       quay-source: redhat-operators
       quay-source-namespace: openshift-marketplace
       ### Developer OpenShift Gitops
-      gitops-dev: 'true'
+      gitops-dev: 'false'
       gitops-dev-team-test: 'hub' #hub or standalone
       # gitops-dev-team-{INSERT_TEAM_NAME}
       ### Loki
