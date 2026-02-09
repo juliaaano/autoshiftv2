@@ -67,7 +67,7 @@ hubClusterSets:
       acm-channel: release-2.15
       acm-source: redhat-operators
       acm-source-namespace: openshift-marketplace
-      acm-availability-config: 'High'
+      acm-availability-config: 'Basic'
       acm-observability: 'true'
       # acm-enable-provisioning: 'false'
       # acm-provisioning-storage-class: (optional)

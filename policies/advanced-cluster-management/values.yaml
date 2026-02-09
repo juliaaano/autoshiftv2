@@ -9,7 +9,7 @@ acm:
   source: redhat-operators
   name: advanced-cluster-management
   disable_hub_self_management: false
-  availabilityConfig: High
+  availabilityConfig: Basic
   enable_backup: false
   gitops_namespace: openshift-gitops
   provisioning:
